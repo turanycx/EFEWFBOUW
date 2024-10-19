@@ -1,0 +1,80 @@
+.container-photos {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.container-photos h1 {
+    text-align: start;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.container-photos p {
+    text-align: start;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.resim-dizini {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* Resimler arasında boşluk bırak */
+}
+
+.iki-resim {
+    display: flex;
+    justify-content: space-between;
+}
+
+.iki-resim img {
+    width: 48%;
+    /* İki resim yan yana, eşit genişlikte */
+    height: 60%;
+}
+
+.tek-resim img {
+    width: 100%;
+    /* Genişliği iki resmin toplam genişliği kadar olacak */
+    height: 40%;
+}
+
+.uc-resim {
+    display: flex;
+    justify-content: space-between;
+}
+
+.uc-resim img {
+    width: 32%;
+    /* Üç resim yan yana, eşit genişlikte */
+    height: 60%;
+}
+
+.iki-resim-alt {
+    display: flex;
+    justify-content: space-between;
+}
+
+.iki-resim-alt img {
+    width: 48%;
+    /* İki resim alt alta, eşit genişlikte */
+    height: 60%;
+}
+
+/* Responsive düzen için medya sorguları */
+@media (max-width: 768px) {
+
+    .iki-resim img,
+    .uc-resim img,
+    .iki-resim-alt img {
+        width: 100%;
+        /* Küçük ekranlarda resimleri tam genişlikte göster */
+        margin-bottom: 10px;
+    }
+
+    .iki-resim,
+    .uc-resim,
+    .iki-resim-alt {
+        flex-direction: column;
+    }
+}

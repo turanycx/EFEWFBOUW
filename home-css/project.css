@@ -1,0 +1,81 @@
+/*Hizmetlerimiz Start*/
+/* Üst bölüm: başlık ve sağdaki yazı */
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  /* Başlığın sol ve sağdaki uzaklığını ayarlamak için */
+  border-bottom: 1px solid #ccc;
+}
+
+.header-title {
+  margin: 0;
+  /* Sol tarafa olan uzaklığı ayarlamak için */
+  padding-left: 80px;
+  font-size: 30px;
+}
+
+.header-link {
+  text-decoration: none;
+  color: #007BFF;
+  padding-right: 50px;
+  font-size: 1em;
+}
+
+/* Resim galerisi */
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 40px 160px;
+}
+
+.gallery-item {
+  text-align: left;
+}
+
+.gallery-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.gallery-title {
+  margin: 10px 0;
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+.gallery-link {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #00FF9C;
+}
+
+/* Responsive ayar */
+@media (max-width: 768px) {
+  .gallery-image {
+    position: relative;
+    right: 60px;
+    max-width: 160%;
+    height: auto;
+  }
+
+  .image-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 120px;
+  }
+
+  .header-title {
+    position: relative;
+    right: 30px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-gallery {
+    grid-template-columns: 1fr;
+    padding: 120px;
+  }
+}

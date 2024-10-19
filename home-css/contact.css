@@ -1,0 +1,207 @@
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Dropdown menü için stil */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-btn {
+  cursor: pointer;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content li {
+  list-style: none;
+}
+
+.dropdown-content li a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content li a:hover {
+  background-color: #ddd;
+}
+
+/* Dropdown menü hover ile açılır */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Responsive stil */
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+  }
+
+  .dropdown-content {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .dropdown-content li a {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+    position: relative;
+  }
+}
+
+/*contact-price-start*/
+/* Genel yapı */
+.contact-block-price-container {
+  max-width: 1500px;
+  margin: 40px auto;
+  padding: 25px;
+}
+
+.contact-block-price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.contact-block-price-column {
+  width: 48%;
+}
+
+/* Sol blok stilleri */
+.contact-block-price-left h2 {
+  font-size: 30px;
+  color: #000;
+}
+
+.contact-block-price-left p {
+  font-size: 20px;
+  line-height: 1.6;
+  
+}
+
+/* Tablo stili */
+.contact-block-price-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.contact-block-price-table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.contact-block-price-table td:nth-child(2) {
+  text-align: right;
+}
+
+/* Dipnot */
+.contact-block-price-note {
+  font-size: 14px;
+  font-style: italic;
+  color: red;
+  margin-top: 10px;
+}
+
+/* Sağ blok (form) stilleri */
+.contact-block-price-right {
+  background-color: #2a3f4f;
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+}
+
+.contact-block-price-right h2 {
+  color: white;
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+
+.contact-block-price-right p {
+  margin-bottom: 20px;
+}
+
+/* Form stili */
+.contact-block-price-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-block-price-form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-block-price-form-row input[type="text"],
+.contact-block-price-form-row input[type="email"],
+.contact-block-price-long-input,
+#contact-block-price-file-upload {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+#contact-block-price-file-upload {
+  background-color: white;
+  padding: 7%;
+}
+
+/* Uzun input */
+.contact-block-price-long-input {
+  margin-bottom: 20px;
+}
+
+/* Submit buton */
+.contact-block-price-submit-btn {
+  background-color: #00FF9C;
+  color: #2a3f4f;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.contact-block-price-submit-btn:hover {
+  background-color: #00ff9c;
+}
+.map iframe{
+  width: 100%;
+}
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+  .contact-block-price-row {
+    flex-direction: column;
+  }
+
+  .contact-block-price-column {
+    width: 100%;
+  }
+
+  .contact-block-price-form-row {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,159 @@
+/* Genel yapı */
+.contact-v2-container {
+    max-width: 1600px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.contact-v2-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.contact-v2-column {
+    width: 48%;
+}
+
+/* Sol blok başlık ve paragraf */
+.contact-v2-left h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.contact-v2-left p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Sol blok (liste) */
+.contact-v2-list {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-v2-list li {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #000;
+}
+
+.contact-v2-list li i {
+    color: green;
+    margin-right: 10px;
+}
+
+/* Sol blok (telefon bilgileri) */
+.contact-v2-info {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+.contact-v2-info p {
+    margin: 0 15px 0 0;
+}
+
+.contact-v2-phone-icon {
+    font-size: 24px;
+    color: white;
+    position: absolute;
+    left: -50px;
+    top: 0;
+}
+
+/* Sağ blok (form) stilleri */
+.contact-v2-right {
+    background-color: #2a3f4f;
+    padding: 20px;
+    /* Formu genişlettim */
+    border-radius: 8px;
+    color: white;
+}
+
+.contact-v2-right h2 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 36px;
+    /* Başlık boyutunu artırdım */
+}
+
+.contact-v2-right p {
+    margin-bottom: 30px;
+    font-size: 18px;
+    /* Yazı boyutunu büyüttüm */
+}
+
+/* Form stili */
+.contact-v2-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-v2-form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.contact-v2-form-row input[type="text"],
+.contact-v2-form-row input[type="email"],
+.contact-v2-long-input,
+#contact-v2-file-upload {
+    width: 100%;
+    padding: 15px;
+    /* Input padding büyüdü */
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+#contact-v2-file-upload {
+    background-color: white;
+}
+
+/* Uzun input */
+.contact-v2-long-input {
+    margin-bottom: 30px;
+    /* Daha büyük boşluk */
+}
+
+/* Submit buton */
+.contact-v2-submit-btn {
+    background-color:#00FF9C;
+    color: black;
+    border: none;
+    padding: 18px;
+    /* Buton boyutu büyüdü */
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    /* Buton yazı boyutu büyüdü */
+}
+
+.contact-v2-submit-btn:hover {
+    background-color: #e29500;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+    .contact-v2-row {
+        flex-direction: column;
+    }
+
+    .contact-v2-column {
+        width: 100%;
+    }
+
+    .contact-v2-form-row {
+        flex-direction: column;
+    }
+
+    .contact-v2-phone-icon {
+        position: static;
+        margin-left: 10px;
+    }
+}

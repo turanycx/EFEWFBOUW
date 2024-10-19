@@ -1,0 +1,249 @@
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  width: 100%;
+  font-size: 1.6rem;
+  bottom: 0;
+  
+}
+
+.footer-column {
+  flex: 1;
+  font-size: 1.2rem;
+  margin: 30px;
+}
+
+.footer-column:last-child {
+  margin-right: 0;
+}
+
+.footer-logo {
+  width: 250px;
+  margin-bottom: 10px;
+  position: relative;
+  bottom: 70px;
+}
+
+.footer-title {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: black;
+  position: relative;
+  top: 40px;
+}
+
+.footer-description {
+  font-size: 0.9em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  position: relative;
+  bottom: 150px;
+  color: gray;
+}
+.footer-description span{
+  font-size: 20px;
+  font-style: bold;
+  color: black;
+}
+.services-list {
+  list-style: none;
+  padding: 0;
+  font-size: 0.9em;
+  color: gray;
+  position: relative;
+  top: 40px;
+}
+
+.services-list li {
+  margin-bottom: 10px;
+}
+
+.opening-hours {
+  list-style: none;
+  padding: 0;
+  font-size: 0.9em;
+  color: gray;
+  position: relative;
+  top: 40px;
+}
+
+.opening-hours li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.contact-button {
+  background-color: #00FF9C;
+  color: black;
+  padding: 10px 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.3s ease;
+  position: relative;
+  top: 40px;
+}
+
+.contact-button:hover {
+  background-color: #00FF9C;
+  padding-right: 25px;
+}
+
+.contact-button:hover::after {
+  content: ' ➡';
+  margin-left: 5px;
+}
+
+.contact-button:hover::before {
+  content: '📞';
+  margin-right: 5px;
+}
+
+/* Mobil uyumluluk */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    right: 20px;
+  }
+
+  .footer-column {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+
+  .contact-button {
+    width: 100%;
+  }
+
+  .footer-logo {
+    position: relative;
+    top: 10px;
+    width: 350px;
+    height: 350px;
+  }
+
+  .footer-description {
+    position: relative;
+    top: 10px;
+  }
+}
+
+.bottom-bar {
+  background-color: #f8f8f8;
+  /* Arka plan rengi */
+  display: flex;
+  /* Flexbox kullanarak elemanları yan yana diz */
+  justify-content: center;
+  /* Elemanları yatayda ortala */
+  align-items: center;
+  /* Dikeyde ortala */
+  gap: 10px;
+  /* Elemanlar arasına boşluk ekle */
+  padding: 10px 20px;
+  /* İç boşluk */
+  font-size: 14px;
+  /* Yazı boyutu */
+  width: 100%;
+  /* Tam genişlik */
+  position: relative;
+  /* Pozisyon ayarlaması */
+  bottom: 0;
+  /* Alt kısma sabitleme */
+}
+
+.legal-info {
+  color: #333;
+  /* Yazı rengi */
+  margin: 0;
+  /* Varsayılan boşluğu kaldır */
+}
+
+.footer-link {
+  color: #0073e6;
+  /* Link rengi */
+  text-decoration: none;
+  /* Alt çizgi olmadan gösterim */
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+  /* Üzerine gelindiğinde alt çizgi ekle */
+}
+
+/* Mobil cihazlar için */
+@media screen and (max-width: 600px) {
+  .bottom-bar {
+    flex-direction: column;
+    /* Küçük ekranlarda elemanları üst üste diz */
+  }
+
+  .legal-info {
+    font-size: 12px;
+    /* Küçük ekranlarda yazı boyutunu küçült */
+  }
+}
+
+/* Laptop and Tablet */
+@media (max-width: 1024px) and (min-width: 0px) {
+
+  .footer-nav {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .footer-links-container {
+    gap: 34px;
+    margin-right: 0px;
+  }
+
+  .footer-links {
+    padding: 0px 12px;
+  }
+
+  .footer-links a {
+    font-size: 16px;
+    padding: 0px;
+  }
+
+  .discounts {
+    margin-top: 34px;
+  }
+
+  .service-page-title h1 {
+    font-size: 24px;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-right: 50px;
+  }
+
+  .service-page-title p {
+    font-size: 16px;
+  }
+
+  .service-features {
+    flex-direction: column;
+    margin-top: 100px;
+    gap: 30px;
+  }
+
+  .service-stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+
+  .contact-content {
+    flex-direction: column;
+  }
+}

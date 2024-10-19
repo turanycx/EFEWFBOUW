@@ -1,0 +1,90 @@
+ /*Özellikler Start*/
+
+ .container-bouw {
+   max-width: 1750px;
+   margin: 0 auto;
+   padding: 20px;
+   position: relative;
+   bottom: 190px;
+ }
+
+ .row-bouw {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 40px;
+ }
+
+ /* Sol ve sağ kolonlar */
+ .column-bouw {
+   width: 48%;
+ }
+
+ /* Sol taraf başlık */
+ .column-bouw.left-bouw h2 {
+   font-size: 30px;
+   font-weight: bold;
+ }
+
+ /* Sağ taraf metin */
+ .column-bouw.right-bouw p {
+   font-size: 16px;
+   line-height: 1.6;
+ }
+
+ /* Bloklar */
+ .block-container-bouw {
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .block-bouw {
+   background-color: #f4f4f4;
+   padding: 20px;
+   border-radius: 8px;
+   width: 30%;
+   text-align: left;
+   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+ }
+
+ /* Okey işareti */
+ .block-bouw i {
+   color: green;
+   font-size: 24px;
+   margin-bottom: 10px;
+ }
+
+ /* Blok başlıklar */
+ .block-bouw h3 {
+   font-size: 18px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+ }
+
+ /* Blok paragraflar */
+ .block-bouw p {
+   font-size: 14px;
+   line-height: 1.5;
+ }
+
+ /* Responsive Tasarım */
+ @media (max-width: 768px) {
+   .row-bouw {
+     flex-direction: column;
+   }
+
+   .column-bouw {
+     width: 100%;
+     margin-bottom: 20px;
+   }
+
+   .block-container-bouw {
+     flex-direction: column;
+   }
+
+   .block-bouw {
+     width: 100%;
+     margin-bottom: 20px;
+   }
+ }
+
+ /*Özellikler End*/

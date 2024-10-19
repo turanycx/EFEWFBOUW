@@ -1,0 +1,87 @@
+.yorum-kapsayici {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 40px;
+
+}
+
+.ana-resim {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px auto;
+  float: left;
+}
+
+.yorum-ızgara {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  clear: both;
+  box-shadow: black;
+}
+
+.yorum-blok {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border: 1px solid #ddd;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 150px;
+}
+
+.yorum-yildizlar {
+  color: gold;
+  font-size: 25px;
+  text-align: left;
+}
+
+.yorum-icerik {
+  margin: 10px 0;
+  font-style: italic;
+  font-size: 16px;
+  text-align: left;
+}
+
+.yorum-icerik::before {
+  content: '“';
+  font-size: 20px;
+  color: #ccc;
+  margin-right: 5px;
+}
+
+.yorum-isim {
+  text-align: left;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.yorum-kucuk-resim {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.yorum-kucuk-resim img {
+  width: 40px;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* Responsive tasarım için medya sorgusu */
+@media (max-width: 768px) {
+  .yorum-ızgara {
+    grid-template-columns: 1fr;
+    position: relative;
+    bottom: 100px;
+  }
+
+  .yorum-kapsayici .ana-resim {
+    position: relative;
+    bottom: 200px;
+  }
+}
