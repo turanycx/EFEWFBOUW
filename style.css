@@ -1,0 +1,556 @@
+ @import url(pages/responsive-tanıtım/responsive-container-1.css);
+ @import url(pages/responsive-tanıtım/responsive-container-2.css);
+ @import url(pages/responsive-tanıtım/responsive-container-3.css);
+ @import url(pages/hizmetlerimiz/badkamer/badkamer.css);
+ @import url(pages/hizmetlerimiz/keuken/keuken.css);
+ @import url(pages/hizmetlerimiz/schildenwerk/schilderwerk.css);
+ @import url(pages/hizmetlerimiz/stucwerk/stucwerk.css);
+ @import url(pages/hizmetlerimiz/toilet/toilet.css);
+ @import url(pages/hizmetlerimiz/trap/trap.css);
+ @import url(home-css/hizmetlerimiz.css);
+ @import url(home-css/project.css);
+ @import url(home-css/reviews.css);
+ @import url(home-css/faq.css);
+ @import url(home-css/bouw.css);
+ @import url(home-css/contact-v2.css);
+ @import url(pages/hizmetlerimiz/projects/project.css);
+
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Roboto", sans-serif;
+ }
+
+ body {
+   min-height: 100vh;
+ }
+
+ section {
+   min-width: 100%;
+   min-height: 100vh;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+ }
+
+ /* Navbar */
+ header {
+   z-index: 999;
+   position: relative;
+   top: 15px;
+   left: 0;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 100px;
+   border-bottom: 1px rgba(0, 0, 0, 0) solid;
+   transition: all 0.5s ease-in-out;
+   height: 50px;
+ }
+
+ header.sticky {
+   background: #ffffff;
+   border-bottom: 1px rgba(0, 0, 0, 0.548) solid;
+   padding: 15px 100px;
+ }
+
+ header .brand img {
+   position: relative;
+   width: 250px;
+   height: auto;
+   padding: 0;
+ }
+
+
+ header .menu {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ header .menu a {
+   color: var(--black);
+   font-size: 20px;
+   font-weight: 500;
+   text-decoration: none;
+   margin: 0 10px;
+   padding: 0;
+   position: relative;
+   transition: color 0.3s ease-in-out;
+ }
+
+ header .menu .mededeling {
+   color: white;
+   background: red;
+   border: 1px solid black;
+   padding: 4px;
+   border-radius: 10px;
+ }
+
+ header .menu a:hover {
+   color: #3871c1;
+ }
+
+ header .menu a:hover::before {
+   transform: scaleX(1);
+ }
+
+ header .btn {
+   color: black;
+   font-size: 20px;
+   cursor: pointer;
+   display: none;
+ }
+
+ body {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+ .top-bar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 12px 20px;
+   z-index: 10;
+   /* Navbar'ın üstünde görünmesi için */
+   position: relative;
+   background-color: #3871c1;
+   font-size: 17px;
+   font-weight: 500;
+   color: white;
+ }
+
+ .left-section {
+   position: relative;
+   left: 100px;
+ }
+
+ .right-section {
+   position: relative;
+   right: 100px;
+   border: 2x solid white;
+   border-radius: 3px;
+   ;
+ }
+
+ .right-section button {
+   position: relative;
+   border: 2x solid white;
+   border-radius: 3px;
+   background-color: #3871c1
+ }
+
+ .left-section,
+ .center-section,
+ .right-section {
+   display: flex;
+   align-items: center;
+ }
+
+ .icon-text {
+   display: flex;
+   align-items: center;
+   margin-right: 50px;
+ }
+
+ .icon-text img {
+   color: green;
+   margin-right: 5px;
+   height: 16px;
+   width: 16px;
+ }
+
+ .stars i {
+   color: gold;
+   margin-right: 5px;
+ }
+
+ .stars span {
+   margin-left: 10px;
+   font-weight: bold;
+ }
+
+ .right-section button {
+   width: 220px;
+   color: black;
+   position: relative;
+   background-color: #00FF9C;
+   font-size: large;
+   font-weight: 400;
+   cursor: pointer;
+   padding: 2px;
+   border-radius: 10px;
+ }
+
+ @media (max-width: 768px) {
+   .top-bar {
+     flex-direction: column;
+     text-align: center;
+   }
+
+   .top-bar .left-section {
+     display: none;
+   }
+
+   .left-section,
+   .center-section,
+   .right-section {
+     margin-bottom: 10px;
+   }
+
+   .center-section {
+     position: relative;
+     right: 80px;
+   }
+
+   .icon-text {
+     justify-content: center;
+     margin-right: 0;
+   }
+ }
+
+ .menu {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+ }
+
+ /* Dropdown menü için stil */
+ .dropdown {
+   position: relative;
+   display: inline-block;
+ }
+
+ .dropdown-btn {
+   cursor: pointer;
+   padding: 10px;
+   text-decoration: none;
+ }
+
+ .dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: #f9f9f9;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+   z-index: 1;
+ }
+
+ .dropdown-content li {
+   list-style: none;
+ }
+
+ .dropdown-content li a {
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+ }
+
+ .dropdown-content li a:hover {
+   background-color: #ddd;
+ }
+
+ /* Dropdown menü hover ile açılır */
+ .dropdown:hover .dropdown-content {
+   display: block;
+ }
+
+ /* Responsive stil */
+ @media (max-width: 768px) {
+  header{
+    width: 100%;
+  }
+
+  .hero-page{
+    width: 100%;
+  }
+   .menu {
+     flex-direction: column;
+   }
+
+   .dropdown-content {
+     position: static;
+     width: 100%;
+     box-shadow: none;
+
+   }
+
+   .dropdown-content li a {
+     padding: 10px;
+     border-bottom: 1px solid #ddd;
+     opacity: 10;
+   }
+
+   .dropdown:hover .dropdown-content {
+     display: block;
+     position: relative;
+   }
+   
+ }
+
+ /* Hero Page */
+ .hero-page {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   margin-top: 30px;
+   align-items: center;
+   text-align: center;
+   background: url(img/ana\ ekran.png);
+   background-size: cover;
+   background-position: center;
+ }
+
+ .hero-page-headlines {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+
+
+ #hero-title {
+   font-size: 64px;
+   color: white;
+   position: relative;
+   font-weight: 600;
+   top: 300px;
+   -webkit-text-stroke: 1px black;
+ }
+
+ .hero-page-headlines div {
+   margin-top: 32px;
+   margin-bottom: 100px;
+ }
+
+ .btn-2-first {
+   align-items: center;
+   background-color: #2b3e4f;
+   box-sizing: border-box;
+   color: white;
+   cursor: pointer;
+   display: inline-flex;
+   font-family: Inter, sans-serif;
+   font-size: 20px;
+   font-weight: 600;
+   height: 48px;
+   justify-content: center;
+   letter-spacing: -0.8px;
+   line-height: 24px;
+   width: 140px;
+   outline: 0;
+   padding: 0 17px;
+   text-align: center;
+   text-decoration: none;
+   transition: all 0.3s;
+   user-select: none;
+   -webkit-user-select: none;
+   touch-action: manipulation;
+   margin: 5px;
+   border: none;
+ }
+
+ .btn-heropage {
+   width: 220px;
+   color: white;
+   position: relative;
+   top: 300px;
+   background-color: #2b3e4f;
+ }
+
+ .btn-transparent {
+   background-color: #00FF9C;
+   color: white;
+   width: 220px;
+   position: relative;
+   top: 300px;
+ }
+
+ /*Navbar Ends */
+
+ /* Laptop and Tablet */
+ @media (max-width: 1024px) and (min-width: 0px) {
+   header {
+     padding: 20px 50px;
+   }
+
+   header .btn {
+     display: block;
+     color: black;
+   }
+
+   header .menu {
+     position: fixed;
+     background: var(--accent);
+     flex-direction: column;
+     min-width: 400px;
+     height: 100vh;
+     top: 0;
+     right: -100%;
+     padding: 50px 50px;
+     transition: 0.5s;
+     transition-property: right;
+   }
+
+   header .menu.active {
+     right: 0;
+     z-index: 999;
+     opacity: 0.8;
+     color: black;
+     background-color: white;
+   }
+
+   header .menu .close-btn {
+     position: absolute;
+     top: 0;
+     left: 0;
+     margin: 25px;
+     color: black;
+   }
+
+   header .menu a {
+     display: block;
+     font-size: 20px;
+     margin: 20px;
+     padding: 0 15px;
+     color: black;
+   }
+
+   .btn-visible {
+     display: none;
+   }
+
+   .hero-page {
+     overflow: hidden;
+   }
+
+   #hero-title {
+     font-size: 64px;
+     width: 450px;
+   }
+
+   #hero-description {
+     font-size: 16px;
+     width: 650px;
+   }
+
+   .btn-heropage {
+     font-size: 16px;
+   }
+
+   .btn-transparent:hover {
+     background-color: black;
+     color: white;
+     border: 1px solid white;
+   }
+
+   .hero-page-imgs img {
+     height: 350px;
+     width: 350px;
+   }
+
+ }
+
+
+ /* Phone Responsiveness */
+ @media (max-width: 426px) and (min-width: 0px) {
+
+   /* Navbar */
+   header .menu {
+     min-width: 300px;
+     background-color: white;
+     opacity: 10;
+   }
+
+   header {
+     padding: 10px 24px;
+   }
+
+   header.sticky {
+     padding: 15px 24px;
+   }
+
+
+   .btn-2 {
+     font-size: 15px;
+     width: 120px;
+     height: 50px;
+     border: none;
+   }
+
+   .btn-2-first {
+     font-size: 15px;
+     width: 120px;
+     height: 50px;
+     border: none;
+   }
+
+
+
+
+   /* Hero Page */
+   #hero-slogan {
+     font-size: 8px;
+     width: 250px;
+     padding: 8px;
+   }
+
+   #hero-title {
+     font-size: 35px;
+     width: 250px;
+   }
+
+   #hero-description {
+     font-size: 20px;
+     width: 250px;
+   }
+
+   .btn-heropage {
+     width: 220px;
+     font-size: 20px;
+     position: relative;
+     bottom: 500px;
+   }
+
+   .btn-transparent {
+     width: 220px;
+     font-size: 20px;
+     position: relative;
+     bottom: 500px;
+   }
+
+   .call-icon {
+     display: flex;
+     /* Mobil görünümde göster */
+     position: relative;
+     bottom: 60px;
+     right: 10%;
+   }
+
+ }
+
+ .call-icon {
+   position: fixed;
+   /* Sabit konumlandırma */
+   bottom: 60px;
+   /* Alt kenardan 20px yukarıda */
+   right: 20px;
+   /* Sağ kenardan 20px içeride */
+   z-index: 1000;
+   /* Diğer elemanların üstünde görünsün */
+   /* Varsayılan olarak gizli */
+ }
+
+ .call-icon img {
+   width: 60px;
+   /* İkonun genişliği */
+   height: auto;
+   /* Yükseklik orantılı olacak şekilde ayarla */
+   cursor: pointer;
+   /* Üzerine gelindiğinde fare imlecini değiştir */
+ }
