@@ -1,0 +1,140 @@
+/* responsive tanıtım sayfası start */
+
+.responsive-container-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 100px;
+  position: relative;
+  top: 250px;
+}
+
+.content-block-two {
+  flex: 1;
+  max-width: 950px;
+  text-align: start;
+  position: relative;
+  bottom: 200px;
+}
+.content-block-two span{
+  font-size: 40px;
+}
+.content-block-two img {
+  width: 25px;
+  height: auto;
+}
+
+.content-block-two h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.content-block-two p {
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.content-block-two span {
+  font-size: larger;
+  color: #00FF9C;
+  font-style: bold;
+}
+
+.button-group-two {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.button-group-two button {
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.button-group-two .button-first-two {
+  width: 220px;
+  color: white;
+  position: relative;
+  background-color: #2b3e4f;
+  border: none;
+}
+
+.button-group-two .button-second-two {
+  background-color: #00FF9C;
+  color: black;
+  width: 200px;
+  border: none;
+}
+
+/* 2. Blok stili */
+.right-image-two {
+  flex: 0 0 700px;
+  max-width: 100%;
+}
+
+.right-image-two img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  bottom: 180px;
+}
+
+/* Responsive ayarlar */
+@media (max-width: 768px) {
+  .responsive-container-two {
+    flex-direction: column;
+    align-items: center;
+    /* Mobilde dikey ortala */
+    gap: 40px;
+    /* Alanı azaltmak için boşluğu küçült */
+  }
+
+  .content-block-two {
+    /* Sağ boşluğu kaldır */
+    /* Alt boşluğu sıfırla */
+    width: 100%;
+    /* Genişliği %100 yap */
+  }
+
+  .content-block-two h1 {
+    /* Sağ boşluğu kaldır */
+    /* Alt boşluğu sıfırla */
+    width: 100%;
+    /* Genişliği %100 yap */
+    position: relative;
+    top: 100px;
+  }
+
+  .content-block-two p {
+    /* Sağ boşluğu kaldır */
+    /* Alt boşluğu sıfırla */
+    width: 100%;
+    /* Genişliği %100 yap */
+    position: relative;
+    top: 100px;
+
+  }
+
+  .button-group-two {
+    position: relative;
+    top: 100px;
+  }
+
+  .right-image-two {
+    width: 100%;
+    /* Resmin genişliği %100 olacak */
+  }
+
+  .right-image-two img {
+    margin-bottom: 0;
+    /* Resmin altında boşluk bırakma */
+    position: relative;
+    bottom: 100px;
+  }
+
+}

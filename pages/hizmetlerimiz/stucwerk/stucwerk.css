@@ -1,0 +1,426 @@
+
+/*Keuken Start*/
+.keuneken-body {
+  margin: 0;
+  padding: 80px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: #2b3e4f;
+  margin-top: 30px;
+}
+
+.keuken-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+}
+
+/* Sol tarafta başlık, yazı ve maddeler */
+.keuken-left-content {
+  max-width: 70%;
+  color: white;
+  text-align: left;
+  justify-content: flex-start;
+  /* Üstten hizalama */
+
+}
+
+.keuken-header-one {
+  font-size: 55px;
+  margin-bottom: 20px;
+  color: white;
+  width: 70%;
+}
+
+.keuken-description {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+
+.keuken-features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+
+.keuken-feature-item {
+  margin-bottom: 15px;
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+}
+
+.keuken-feature-item::before {
+  content: '✔️';
+  margin-right: 10px;
+  color: green;
+}
+
+
+.keuken-buttons {
+  margin-top: 20px;
+  padding: 10px 15px;
+  margin-right: 10px;
+  font-size: 1.2em;
+  font-weight: 500;
+  border: none;
+  color: black;
+  cursor: pointer;
+}
+
+.keuken-button {
+  background-color: #00FF9C;
+}
+
+.keuken-button-secondary {
+  background-color: #00FF9C;
+}
+
+.keuken-button:hover {
+  opacity: 0.9;
+}
+
+/* Sağ tarafta fotoğraf */
+.keuken-right-content img {
+  max-width: 70%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Fotoğrafın boyutunu ayarlamak için */
+.keuken-right-content {
+  max-width: 45%;
+  /* Sağdaki resmin max genişliği */
+  display: flex;
+  justify-content: flex-end;
+  /* Sağ hizalama  */
+  align-items: flex-start;
+  /* Üst hizalama */
+
+}
+
+/* Responsive tasarım */
+@media (max-width: 768px) {
+  .keuken-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .keuken-left-content,
+  .keuken-right-content {
+    max-width: 100%;
+  }
+
+  .keuken-right-content img {
+    display: none;
+  }
+
+  .keuken-buttons {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .keuken-button {
+    margin-bottom: 10px;
+  }
+
+  .keuken-button:last-child {
+    margin-right: 0;
+  }
+}
+
+.keuken-wrapper {
+  display: flex;
+  justify-content: space-between;
+  /* Sol ve sağ kısmı ayır */
+  padding: 0;
+  width: 75%;
+  margin: 80px 160px;
+}
+
+/* Sol taraf içeriği */
+.keuken-left-section {
+  max-width: 75%;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.keuken-header {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.keuken-paragraph {
+  margin-bottom: 30px;
+  /* Paragraflar arasındaki boşluk */
+  line-height: 1.6;
+  font-size: 15px;
+  padding: 2px;
+}
+
+.keuken-large-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  /* Resim altındaki boşluk */
+}
+
+/* Sağ taraf: Contact kısmı */
+.keuken-contact-section {
+  max-width: 57%;
+  /* Sağ kısmın genişliği */
+  padding: 20px;
+  background-color: #2b3e4f;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  height: 60%;
+  width: 60%;
+  align-items: flex-end;
+}
+
+.keuken-contact-header {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.keuken-contact-paragraph {
+  margin-bottom: 20px;
+  font-size: 0.9em;
+  line-height: 1.4;
+  color: white;
+}
+
+/* Input alanları */
+.keuken-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.keuken-submit-button {
+  padding: 10px 15px;
+  background-color: #00FF9C;
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.keuken-submit-button:hover {
+  background-color: #28a745;
+}
+
+/* Alt butonlar için stil */
+.keuken-alt-button {
+  padding: 10px 15px;
+  background-color: #28a745;
+  /* Yeşil arka plan */
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  margin-right: 10px;
+  /* Butonlar arasındaki boşluk */
+}
+
+.keuken-alt-button-first {
+  background-color: #0056b3;
+}
+
+/* Responsive tasarım */
+@media (max-width: 768px) {
+  .keuken-wrapper {
+    flex-direction: column;
+    /* Dikey hizalama */
+    align-items: center;
+    /* Merkezleme */
+    position: relative;
+    max-width: 160%;
+    right: 150px;
+  }
+
+  .keuken-large-image {
+    width: 100%;
+    height: auto;
+    /* Resimleri tam genişlikte yap */
+    /* Yüksekliği otomatik olarak ayarla */
+  }
+
+  .keuken-left-section,
+  .keuken-contact-section {
+    max-width: 150%;
+    /* Genişlik ayarı */
+    margin-bottom: 20px;
+    /* Alt boşluk */
+  }
+
+  .keuken-alt-button {
+    margin-right: 0;
+    /* Mobilde sağ boşluğu kaldır */
+    width: 100%;
+    /* Tam genişlik */
+    margin-bottom: 10px;
+    /* Alt boşluk */
+  }
+  .keuken-contact-header{
+    position: relative;
+    right: 10px;
+  }
+}
+
+/*Keuken Block End*/
+
+/* Keuken End Block Start*/
+
+.open-section-keuken {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  width: 85%;
+  margin: auto;
+}
+
+/* Sol taraf içeriği */
+.left-column-keuken {
+  max-width: 100%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-title-keuken {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.description-keuken {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  font-size: 1em;
+}
+
+.item-list-keuken {
+  list-style: none;
+  padding: 10px;
+  margin: 10px;
+  font-size: large;
+}
+
+.list-item-keuken {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.check-icon-keuken {
+  font-size: 1.5em;
+  /* Simge boyutu */
+  margin-right: 10px;
+  /* Simge ve yazı arasındaki boşluk */
+}
+
+.contact-section-keuken {
+  max-width: 45%;
+  /* Sağ kısmın genişliği */
+  padding: 20px;
+  background-color: #2b3e4f;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  color: white;
+  height: 50%;
+}
+
+.contact-title-keuken {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.contact-description-keuken {
+  margin-bottom: 20px;
+  font-size: 0.9em;
+  line-height: 1.4;
+  color: white;
+}
+
+/* Input alanları */
+.input-field-keuken {
+  width: calc(50% - 10px);
+  /* 2x2 için genişlik ayarı */
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #00FF9C;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.full-width-input-keuken {
+  width: 100%;
+  /* Tam genişlikteki input */
+  border-radius: 1px;
+  border: 1px solid;
+  font-size: 15px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+/* Buton */
+.submit-button-keuken {
+  padding: 10px 15px;
+  background-color: #00FF9C;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+  margin-left: 15px;
+  /* Buton üstündeki boşluk */
+  padding: 15px;
+  width: 250px;
+}
+
+.submit-button-keuken:hover {
+  background-color: green;
+  color: black;
+}
+
+/* Responsive tasarım */
+@media (max-width: 768px) {
+  .open-section-keuken {
+    flex-direction: column;
+    /* Dikey hizalama */
+    align-items: center;
+    /* Merkezleme */
+  }
+
+  .left-column-keuken,
+  .contact-section-keuken {
+    max-width: 150%;
+    /* Genişlik ayarı */
+    margin-bottom: 20px;
+    /* Alt boşluk */
+  }
+
+  .input-field-keuken {
+    width: 100%;
+    /* Mobilde tam genişlik */
+  }
+}
+
+/* Keuken End Block End*/
